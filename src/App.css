@@ -1,0 +1,231 @@
+/* Core Layout Resets & Variables */
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-card: #141414;
+  --accent-gold: #d4af37;
+  --text-main: #f5f5f5;
+  --text-muted: #a0a0a0;
+  --border-color: #262626;
+}
+
+body {
+  margin: 0;
+  background-color: #4a4545;
+  color: var(--text-main);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.studio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navbar Navigation Layout */
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.studio-logo {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #e0dcde;
+}
+
+.studio-logo span {
+  color: var(--accent-gold);
+}
+
+.booking-badge {
+  background: #d9d9dd;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+/* Hero Showcase Panel Layout */
+.hero-banner {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, rgba(20,20,20,0.8) 0%, rgb(63 ,6, 6) 100%);
+  border-radius: 12px;
+  margin: 40px 0;
+  border: 1px solid var(--border-color);
+}
+
+.hero-banner h1 {
+  font-size: 48px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.hero-banner p {
+  color: var(--text-muted);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Service Card Grid Layout */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 4px solid var(--accent-gold);
+  padding-left: 15px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.tattoo-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tattoo-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-gold);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.1);
+}
+
+.style-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.tattoo-card h3 {
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+
+.tattoo-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Interactive Session Selector Panel */
+.consultation-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.consultation-box h2 {
+  color: var(--accent-gold);
+  margin-bottom: 10px;
+}
+
+.consultation-box p {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.style-select-btn {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.style-select-btn.active {
+  background: var(--accent-gold);
+  color: #000;
+  border-color: var(--accent-gold);
+}
+
+.style-select-btn:hover:not(.active) {
+  border-color: var(--text-main);
+}
+
+.selection-summary {
+  margin-top: 30px;
+  font-size: 18px;
+  color: var(--text-main);
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Studio Footer Layout */
+.studio-footer {
+  margin-top: 60px;
+  padding: 40px 0;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h4 {
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-column p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.footer-link {
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--accent-gold);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  color: #404040;
+  font-size: 12px;
+  margin-top: 30px;
+}
