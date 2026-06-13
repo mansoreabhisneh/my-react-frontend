@@ -86,7 +86,7 @@ export default function App() {
       <footer className="studio-footer">
         <div className="footer-column">
           <h4>📞 Contact</h4>
-          <p><strong>Phone:</strong> <a href="tel:+9685032166" className="footer-link">+968 503 2166</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+91 9685032166" className="footer-link">+91 96850 32166</a></p>
           <p><strong>Email:</strong> <a href="mailto:arcd2112@gmail.com" className="footer-link">arcd2112@gmail.com</a></p>
           <p><strong>Hours:</strong> Mon - Sun, 10:00 AM - 09:00 PM</p>
         </div>
