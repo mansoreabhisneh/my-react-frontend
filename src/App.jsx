@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import RegistrationForm from './RegistrationForm..jsx';
 import './App.css';
   
      
@@ -83,6 +84,8 @@ export default function App() {
         )}
       </section>
 
+      <RegistrationForm />
+
       <footer className="studio-footer">
         <div className="footer-column">
           <h4>📞 Contact</h4>
@@ -106,7 +109,7 @@ export default function App() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} INK SOCIETY Studio. Designed for bold, lasting ink.</p>
+          <p>© {new Date().getFullYear()} SHADOW INKK Studio. Designed for bold, lasting ink.</p>
         </div>
       </footer>
     </div>
