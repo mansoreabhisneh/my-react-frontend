@@ -49,10 +49,9 @@ export default function RegistrationForm() {
 
   return (
   <form onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto', color: 'white' }}>
-    <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>Book a Tattoo Consultation</h2>
-
-    {/* Name Field */}
+    <h2 style={{ textAlign: 'center', marginBottom: '30px' }}>Book a Tattoo Consultation</h2 >   
     <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
+
       <label htmlFor="name" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
         Name
       </label>
@@ -63,11 +62,10 @@ export default function RegistrationForm() {
         value={formData.Name}
         onChange={handleChange}
         required
-        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: 'white', border: '1px solid #555', borderRadius: '4px' }}
+        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px' }}
       />
     </div>
-
-    {/* Email Field */}
+    
     <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
       <label htmlFor="email" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
         Email
@@ -79,11 +77,11 @@ export default function RegistrationForm() {
         value={formData.Email}
         onChange={handleChange}
         required
-        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: 'white', border: '1px solid #555', borderRadius: '4px' }}
+        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px' }}
       />
     </div>
 
-    {/* Phone Field */}
+
     <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
       <label htmlFor="phone" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
         Phone
@@ -95,11 +93,11 @@ export default function RegistrationForm() {
         value={formData.Phone}
         onChange={handleChange}
         required
-        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: 'white', border: '1px solid #555', borderRadius: '4px' }}
+        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px' }}
       />
     </div>
 
-    {/* Tattoo Idea Field */}
+
     <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
       <label htmlFor="idea" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
         Tattoo Idea
@@ -110,15 +108,15 @@ export default function RegistrationForm() {
         value={formData.Idea}
         onChange={handleChange}
         required
-        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: 'white', border: '1px solid #555', borderRadius: '4px', minHeight: '80px', resize: 'vertical' }}
+        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px', minHeight: '80px', resize: 'vertical' }}
       />
     </div>
 
-    {/* Submit Button */}
+
     <div style={{ textAlign: 'center', marginTop: '10px' }}>
       <button 
         type="submit" 
-        style={{ padding: '10px 20px', backgroundColor: '#666', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+        style={{ padding: '10px 20px', backgroundColor: '#666', color: '#d4af37', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
       >
         Submit
       </button>
