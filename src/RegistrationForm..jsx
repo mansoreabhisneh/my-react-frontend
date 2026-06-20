@@ -5,7 +5,9 @@ export default function RegistrationForm() {
     Name: '',
     Email: '',
     Phone: '',
-    Tattoo_Idea: ''
+    Tattoo_Idea: '',
+    Date: '',
+    Time: ''
   });
 
   const handleChange = (event) => {
@@ -38,7 +40,9 @@ export default function RegistrationForm() {
           Name: '',
           Email: '',
           Phone: '',
-          Tattoo_Idea: ''
+          Tattoo_Idea: '',
+          Date: '',
+          Time: ''
         });
       })
       .catch((error) => {
@@ -99,16 +103,46 @@ export default function RegistrationForm() {
 
 
     <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
-      <label htmlFor="idea" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
-        Tattoo Idea
+      <label htmlFor="tattoo-idea" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
+        Tattoo_Idea
       </label>
       <textarea
-        id="idea"
-        name="Idea"
-        value={formData.Idea}
+        id="tattoo-idea"
+        name="Tattoo_Idea"
+        value={formData.Tattoo_Idea}
         onChange={handleChange}
         required
         style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px', minHeight: '80px', resize: 'vertical' }}
+      />
+    </div>
+
+    <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
+      <label htmlFor="date" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
+        Date
+      </label>
+      <input
+        type="date"
+        id="date"
+        name="Date"
+        value={formData.Date}
+        onChange={handleChange}
+        required
+        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px' }}
+      />
+    </div>
+
+    <div style={{ display: 'flex', marginBottom: '20px', alignItems: 'flex-start' }}>
+      <label htmlFor="time" style={{ width: '100px', textAlign: 'right', marginRight: '15px', marginTop: '8px' }}>
+        Time
+      </label>
+      <input
+        type="time"
+        id="time"
+        name="Time"
+        value={formData.Time}
+        onChange={handleChange}
+        required
+        style={{ flex: 1, padding: '8px', backgroundColor: '#333', color: '#d4af37', border: '1px solid #555', borderRadius: '4px' }}
       />
     </div>
 
